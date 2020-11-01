@@ -3,13 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 0,
-			"architecture" : "x86",
+			"minor" : 1,
+			"revision" : 9,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 527.0, 78.0, 1119.0, 938.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 527.0, 79.0, 1119.0, 938.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -36,29 +37,14 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-18",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 443.0, 170.0, 71.0, 22.0 ],
-					"presentation_rect" : [ 443.0, 170.0, 71.0, 22.0 ],
-					"style" : "",
-					"text" : "namespace"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 713.0, 563.5, 150.0, 20.0 ],
-					"presentation_rect" : [ 713.0, 563.5, 150.0, 20.0 ],
-					"style" : "",
 					"text" : "Namespace tab"
 				}
 
@@ -79,9 +65,7 @@
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 677.0, 563.5, 24.0, 24.0 ],
-					"presentation_rect" : [ 677.0, 563.5, 24.0, 24.0 ],
 					"rounded" : 180.0,
-					"style" : "",
 					"text" : "2",
 					"textcolor" : [ 0.619608, 0.0, 0.360784, 0.698039 ],
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -100,8 +84,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 713.0, 589.0, 189.0, 154.0 ],
 					"presentation_linecount" : 11,
-					"presentation_rect" : [ 713.0, 589.0, 189.0, 154.0 ],
-					"style" : "",
 					"text" : "Select some nodes to store value in a cue.\n\nUsing the menu at the bottom, you may also store some namespace selection presets or grab namespace from a cue.\n\nNote that namespace selection are automatically stored in the cuelist file.",
 					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
@@ -116,8 +98,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 713.0, 393.5, 150.0, 47.0 ],
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 713.0, 393.5, 150.0, 47.0 ],
-					"style" : "",
 					"text" : "Store some states in the cuelist and recall them as needed"
 				}
 
@@ -138,9 +118,7 @@
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 677.0, 393.5, 24.0, 24.0 ],
-					"presentation_rect" : [ 677.0, 393.5, 24.0, 24.0 ],
 					"rounded" : 180.0,
-					"style" : "",
 					"text" : "1",
 					"textcolor" : [ 0.619608, 0.0, 0.360784, 0.698039 ],
 					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -160,8 +138,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 10.0, 64.0, 508.0, 20.0 ],
-					"presentation_rect" : [ 10.0, 64.0, 508.0, 20.0 ],
-					"style" : "",
 					"text" : "Store some ossia.model state in a file or in a dict embedded in patcher",
 					"textcolor" : [ 0.6, 0.6, 0.6, 1.0 ]
 				}
@@ -179,8 +155,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 10.0, 10.0, 780.0, 110.0 ],
-					"presentation_rect" : [ 10.0, 10.0, 780.0, 110.0 ]
+					"patching_rect" : [ 10.0, 10.0, 780.0, 110.0 ]
 				}
 
 			}
@@ -193,8 +168,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 713.0, 450.0, 190.0, 100.0 ],
 					"presentation_linecount" : 7,
-					"presentation_rect" : [ 713.0, 450.0, 190.0, 100.0 ],
-					"style" : "",
 					"text" : "By default, store will save the current namespace selection in a new cue (that is the namespace of the last stored or recalled cue). Use alt+store to save all - or check the namespace tab to select all addresses",
 					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
@@ -213,25 +186,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 581.0, 309.5, 235.0, 49.0 ],
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 581.0, 309.5, 235.0, 49.0 ],
-					"style" : "",
 					"text" : "Add a dict @embed 1 in your patcher to save cuelist within patcher",
 					"textcolor" : [ 0.3, 0.3, 0.3, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-24",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 9.0, 641.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 9.0, 641.0, 50.0, 22.0 ],
-					"style" : ""
 				}
 
 			}
@@ -251,7 +207,6 @@
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 9.0, 393.5, 309.0, 180.0 ],
-					"presentation_rect" : [ 9.0, 393.5, 309.0, 180.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -272,22 +227,7 @@
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 9.0, 209.5, 309.0, 180.0 ],
-					"presentation_rect" : [ 9.0, 209.5, 309.0, 180.0 ],
 					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 9.0, 612.0, 178.0, 22.0 ],
-					"presentation_rect" : [ 9.0, 612.0, 178.0, 22.0 ],
-					"style" : "",
-					"text" : "ossia.parameter sdf @type float"
 				}
 
 			}
@@ -308,7 +248,6 @@
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 383.0, 384.0, 272.0, 548.0 ],
-					"presentation_rect" : [ 383.0, 384.0, 272.0, 548.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -321,7 +260,7 @@
 							"fm.1/pan" : 0.0,
 							"fm.1/ramptime" : 20.0,
 							"fm.1/carrier/frequency" : 440.0,
-							"fm.1/cutoff/frequency" : 800.513367,
+							"fm.1/cutoff/frequency" : 800.513367000000017,
 							"fm.1/modulation/index" : 10.0,
 							"fm.1/modulation/ratio" : 6.283237,
 							"fm.2/gain" : -12.0,
@@ -335,8 +274,8 @@
 						}
 ,
 						"gains_only" : 						{
-							"fm.1/gain" : -60.503941,
-							"fm.2/gain" : -57.748043
+							"fm.1/gain" : -60.503940999999998,
+							"fm.2/gain" : -57.748043000000003
 						}
 ,
 						"namespace_presets" : 						{
@@ -366,14 +305,14 @@
 							"fm.1/gain" : -12.0,
 							"fm.1/pan" : -0.409449,
 							"fm.1/ramptime" : 20.0,
-							"fm.1/carrier/frequency" : 3571.326416,
+							"fm.1/carrier/frequency" : 3571.326415999999881,
 							"fm.1/cutoff/frequency" : 2.113096,
-							"fm.1/modulation/index" : 387.952759,
+							"fm.1/modulation/index" : 387.952759000000015,
 							"fm.1/modulation/ratio" : 4.0
 						}
 ,
 						"fm2" : 						{
-							"fm.2/gain" : -57.748043,
+							"fm.2/gain" : -57.748043000000003,
 							"fm.2/pan" : 0.0,
 							"fm.2/ramptime" : 20.0,
 							"fm.2/carrier/frequency" : 440.0,
@@ -390,13 +329,12 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
 					"patching_rect" : [ 383.0, 323.0, 159.0, 22.0 ],
-					"presentation_rect" : [ 383.0, 323.0, 159.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1,
-						"parameter_enable" : 0
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
 					}
 ,
-					"style" : "",
 					"text" : "dict cues.cuelist @embed 1"
 				}
 
@@ -414,8 +352,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 581.0, 225.5, 244.0, 64.0 ],
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 581.0, 225.5, 244.0, 64.0 ],
-					"style" : "",
 					"text" : "Attach ossia.cue_manager to an ossia.device or ossia.model to store the state of the model under this node",
 					"textcolor" : [ 0.3, 0.3, 0.3, 1.0 ]
 				}
@@ -429,8 +365,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 9.0, 171.0, 84.0, 22.0 ],
-					"presentation_rect" : [ 9.0, 171.0, 84.0, 22.0 ],
-					"style" : "",
 					"text" : "fm_synth fm.2"
 				}
 
@@ -443,10 +377,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "namespace" ],
 					"patching_rect" : [ 383.0, 246.5, 187.0, 22.0 ],
-					"presentation_rect" : [ 383.0, 246.5, 187.0, 22.0 ],
-					"style" : "",
 					"text" : "ossia.cue_manager.model cues 1",
 					"varname" : "ossia.cue_manager.model"
 				}
@@ -460,8 +392,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 383.0, 209.5, 139.0, 22.0 ],
-					"presentation_rect" : [ 383.0, 209.5, 139.0, 22.0 ],
-					"style" : "",
 					"text" : "ossia.device simple_test"
 				}
 
@@ -474,28 +404,12 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 9.0, 142.0, 84.0, 22.0 ],
-					"presentation_rect" : [ 9.0, 142.0, 84.0, 22.0 ],
-					"style" : "",
 					"text" : "fm_synth fm.1"
 				}
 
 			}
  ],
 		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-61", 0 ],
-					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-64", 0 ],
 					"source" : [ "obj-61", 0 ]
@@ -512,34 +426,67 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-15::obj-1" : [ "Carrier frequency", "Carrier frequency", 0 ],
+			"obj-15::obj-2" : [ "Cutoff", "Cutoff", 0 ],
 			"obj-15::obj-3" : [ "Index", "Index", 0 ],
-			"obj-9::obj-32" : [ "live.text[10]", "live.text", 0 ],
-			"obj-16::obj-8" : [ "Ratio[1]", "Ratio", 0 ],
-			"obj-9::obj-114" : [ "live.text[6]", "live.text", 0 ],
+			"obj-15::obj-4" : [ "Gain", "Gain", 0 ],
+			"obj-15::obj-6" : [ "Pan", "Pan", 0 ],
+			"obj-15::obj-7" : [ "live.numbox", "live.numbox", 0 ],
+			"obj-15::obj-8" : [ "Ratio", "Ratio", 0 ],
 			"obj-16::obj-1" : [ "Carrier frequency[1]", "Carrier frequency", 0 ],
-			"obj-9::obj-210" : [ "live.text[9]", "live.text", 0 ],
+			"obj-16::obj-2" : [ "Cutoff[1]", "Cutoff", 0 ],
+			"obj-16::obj-3" : [ "Index[1]", "Index", 0 ],
+			"obj-16::obj-4" : [ "Gain[1]", "Gain", 0 ],
+			"obj-16::obj-6" : [ "Pan[1]", "Pan", 0 ],
+			"obj-16::obj-7" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-16::obj-8" : [ "Ratio[1]", "Ratio", 0 ],
+			"obj-9::obj-110::obj-114" : [ "live.text[7]", "live.text", 0 ],
 			"obj-9::obj-110::obj-36" : [ "live.text[1]", "live.text", 0 ],
+			"obj-9::obj-114" : [ "live.text[6]", "live.text", 0 ],
+			"obj-9::obj-14" : [ "live.text[11]", "live.text", 0 ],
+			"obj-9::obj-210" : [ "live.text[9]", "live.text", 0 ],
+			"obj-9::obj-288" : [ "live.tab[3]", "live.tab[1]", 0 ],
+			"obj-9::obj-32" : [ "live.text[10]", "live.text", 0 ],
+			"obj-9::obj-34" : [ "live.text[23]", "live.text", 0 ],
 			"obj-9::obj-45" : [ "live.text[13]", "live.text", 0 ],
 			"obj-9::obj-52" : [ "live.text[12]", "live.text", 0 ],
-			"obj-9::obj-14" : [ "live.text[11]", "live.text", 0 ],
-			"obj-16::obj-4" : [ "Gain[1]", "Gain", 0 ],
-			"obj-15::obj-6" : [ "Pan", "Pan", 0 ],
-			"obj-16::obj-2" : [ "Cutoff[1]", "Cutoff", 0 ],
-			"obj-15::obj-1" : [ "Carrier frequency", "Carrier frequency", 0 ],
-			"obj-16::obj-3" : [ "Index[1]", "Index", 0 ],
-			"obj-15::obj-2" : [ "Cutoff", "Cutoff", 0 ],
-			"obj-15::obj-7" : [ "live.numbox", "live.numbox", 0 ],
-			"obj-16::obj-6" : [ "Pan[1]", "Pan", 0 ],
-			"obj-9::obj-288" : [ "live.tab[3]", "live.tab[1]", 0 ],
-			"obj-9::obj-110::obj-114" : [ "live.text[7]", "live.text", 0 ],
-			"obj-15::obj-8" : [ "Ratio", "Ratio", 0 ],
-			"obj-15::obj-4" : [ "Gain", "Gain", 0 ],
-			"obj-16::obj-7" : [ "live.numbox[1]", "live.numbox", 0 ],
 			"obj-9::obj-68" : [ "live.text[14]", "live.text", 0 ],
 			"parameterbanks" : 			{
 
 			}
+,
+			"parameter_overrides" : 			{
+				"obj-16::obj-1" : 				{
+					"parameter_longname" : "Carrier frequency[1]"
+				}
+,
+				"obj-16::obj-2" : 				{
+					"parameter_longname" : "Cutoff[1]"
+				}
+,
+				"obj-16::obj-3" : 				{
+					"parameter_longname" : "Index[1]"
+				}
+,
+				"obj-16::obj-4" : 				{
+					"parameter_longname" : "Gain[1]"
+				}
+,
+				"obj-16::obj-6" : 				{
+					"parameter_longname" : "Pan[1]"
+				}
+,
+				"obj-16::obj-7" : 				{
+					"parameter_longname" : "live.numbox[1]"
+				}
+,
+				"obj-16::obj-8" : 				{
+					"parameter_longname" : "Ratio[1]"
+				}
 
+			}
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -551,14 +498,14 @@
 			}
 , 			{
 				"name" : "ossia.cue_manager.model.maxpat",
-				"bootpath" : "~/Dropbox/OSSIA-Max_dev/cue_manager-noParam",
+				"bootpath" : "~/GITHUB/ossia.cue-manager/MC-version",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.cue_manager.view.maxpat",
-				"bootpath" : "~/Dropbox/OSSIA-Max_dev/cue_manager-noParam",
+				"bootpath" : "~/GITHUB/ossia.cue-manager/MC-version",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
