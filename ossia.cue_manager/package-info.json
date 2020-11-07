@@ -1,0 +1,43 @@
+{
+	"author" : "OSSIA project",
+	"authors" : ["Julien Rabin", "Mathieu Chamagne"],
+	"description" : "Store some ossia.model state in a file or in a dict embedded in patcher",
+	"displayname" : "",
+	"extends" : "",
+	"extensible" : 0,
+	"homepatcher" : "ossia.cue_manager.model.maxhelp",
+	"max_version_max" : "none",
+	"max_version_min" : "7.1",
+	"name" : "ossia.cue_manager",
+	"os" : 	{
+		"macintosh" : 		{
+			"platform" : [ "ia32", "x64" ],
+			"min_version" : "none"
+		}
+,
+		"windows" : 		{
+			"platform" : [ "ia32", "x64" ],
+			"min_version" : "none"
+		}
+
+	}
+,
+	"package_extra" : 	{
+		"reverse_domain" : "io.ossia",
+		"copyright" : "Copyright (c) 2017 OSSIA"
+	}
+,
+	"tags" : ["framework", "interactive", "Score", "network", "mapping", "OSCQuery"],
+	"version" : "v1.0.1",
+	"website" : "https://ossia.io",
+	"filelist" : 	{
+		"examples" : [],
+		"externals" : [],
+		"patchers" : ["ossia.cue_manager.model.maxpat","ossia.cue_manager.view.maxpat"],
+		"help" : ["ossia.cue_manager.model.maxhelp"],
+		"docs" : [],
+		"code" : [],
+		"extras" : []
+	}
+
+}

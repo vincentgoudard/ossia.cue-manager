@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 7,
+			"minor" : 2,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -64,8 +64,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 7,
+							"minor" : 2,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -368,8 +368,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 7,
+							"minor" : 2,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -405,6 +405,19 @@
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontface" : 3,
+									"id" : "obj-22",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 495.0, 15.0, 315.0, 33.0 ],
+									"text" : "ossia.cue_manager.view requires the Bach package, available in the Package Mananger"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"data" : 									{
 										"init" : 										{
@@ -753,7 +766,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 558.0, 134.5, 248.0, 64.0 ],
+									"patching_rect" : [ 555.0, 135.0, 248.0, 64.0 ],
 									"text" : "Attach ossia.cue_manager to an ossia.device or ossia.model to store the state of the models under this node",
 									"textcolor" : [ 0.3, 0.3, 0.3, 1.0 ]
 								}
@@ -781,7 +794,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "namespace" ],
-									"patching_rect" : [ 360.0, 151.5, 187.0, 35.0 ],
+									"patching_rect" : [ 360.0, 151.5, 165.0, 35.0 ],
 									"text" : "ossia.cue_manager.model my_cues",
 									"varname" : "ossia.cue_manager.model"
 								}
@@ -1073,28 +1086,28 @@
 		"dependency_cache" : [ 			{
 				"name" : "fm_synth.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/ossia/patchers",
-				"patcherrelativepath" : "../../Max 8/Packages/ossia/patchers",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/ossia/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.cue_manager.model.maxpat",
-				"bootpath" : "~/Documents/GitHub/ossia.cue-manager",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/GITHUB/ossia.cue-manager/ossia.cue_manager/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.cue_manager.view.maxpat",
-				"bootpath" : "~/Documents/GitHub/ossia.cue-manager",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/GITHUB/ossia.cue-manager/ossia.cue_manager/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "synth.view.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/ossia/patchers",
-				"patcherrelativepath" : "../../Max 8/Packages/ossia/patchers",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/ossia/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
